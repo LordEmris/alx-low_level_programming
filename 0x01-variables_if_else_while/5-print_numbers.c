@@ -1,25 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Description: prints char below 10
- * Return: Always 0 (success)
+ * main - program that prints the alphabet in lowercase and upper case
+ *
+ * Return: Always 0
  */
 
 int main(void)
 {
-    int x;
+	char letter;
 
-    for (x = 0; x < 10; x++)
-    {
-        putchar(x + '0');
-        if (x < 9)
-        {
-            putchar(',');
-            putchar(' ');
-        }
-    }
-    putchar('\n');
-    return (0);
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		if (letter != 'e' && letter != 'q')
+		putchar(letter);
+	}
+
+	putchar('\n');
+
+	return (0);
 }
 
