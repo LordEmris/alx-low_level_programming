@@ -1,38 +1,16 @@
 #include "main.h"
 
 /**
- * main - function
+ * print_alphabet - function
  * Return: 0
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
-	return (0);
-
-}
-
-
-
-1 - main.c
-
-#include "main.h"
-
-/**
- * main - check the code
- * Return: Always 0.
- */
-int main(void)
+char c;
+for (c = 'a'; c <= 'z'; c++)
 {
-	print_alphabet();
-	return (0);
+_putchar(c);
 }
-
+_putchar('\n');
+}
